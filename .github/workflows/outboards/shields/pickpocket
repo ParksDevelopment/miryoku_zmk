@@ -3,5 +3,5 @@
 
 outboard_repository=ParksDevelopment/PickPocket-config
 outboard_ref=main
-outboard_from=boards/shields/PickPocket
+outboard_from=config/boards/shields/PickPocket
 outboard_to=boards/shields/PickPocket
