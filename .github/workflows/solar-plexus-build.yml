@@ -1,0 +1,32 @@
+name: 'Build SolarPlexus'
+on: workflow_dispatch
+jobs:
+  build_left:
+    uses: ./.github/workflows/main.yml
+    secrets: inherit
+    with:
+      board: '["xiao_ble//zmk"]'
+      shield: '["solarPlexus_left"]'
+      alphas: '["default"]'
+      nav: '["default"]'
+      layers: '["default"]'
+      mapping: '["default"]'
+      custom_config: '["#define MIRYOKU_KLUDGE_SOFT_OFF"]'
+      kconfig: '["CONFIG_ZMK_PM_SOFT_OFF=y\nCONFIG_ZMK_POINTING=y"]'
+      branches: '["default"]'
+      modules: '["default"]'
+
+  build_right:
+    uses: ./.github/workflows/main.yml
+    secrets: inherit
+    with:
+      board: '["xiao_ble//zmk"]'
+      shield: '["solarPlexus_right"]'
+      alphas: '["default"]'
+      nav: '["default"]'
+      layers: '["default"]'
+      mapping: '["default"]'
+      custom_config: '["#define MIRYOKU_KLUDGE_SOFT_OFF"]'
+      kconfig: '["CONFIG_ZMK_PM_SOFT_OFF=y\nCONFIG_ZMK_POINTING=y"]'
+      branches: '["default"]'
+      modules: '["default"]'
