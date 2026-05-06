@@ -4,3 +4,4 @@
 #include "../miryoku/custom_config.h"
 #include "../miryoku/mapping/36/solarPlexus.h"
 #include "../miryoku/miryoku.dtsi"
+#include "gaming.dtsi"
