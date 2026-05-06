@@ -1,0 +1,11 @@
+/ {
+    combos {
+        compatible = "zmk,combos";
+        combo_gaming_exit {
+            layers = <U_TAP>;
+            key-positions = <34 35>;
+            bindings = <&tog U_TAP>;
+            timeout-ms = <200>;
+        };
+    };
+};
